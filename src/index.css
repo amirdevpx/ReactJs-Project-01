@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border
+    }
+    body {
+        @apply font-montserrat font-normal text-base bg-white text-gray-800
+    }
+    a {
+        @apply text-base max-lg:text-sm
+    }
+}
+
+@layer components {
+    .features-box:hover .features-icon {
+        @apply text-white
+    }
+
+    .icon > svg {
+        @apply h-6 w-6
+    }
+}
