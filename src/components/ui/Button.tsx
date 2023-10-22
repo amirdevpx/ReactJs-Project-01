@@ -4,7 +4,7 @@ import { cn } from "../../libs/utils";
 
 // Component Variants
 const buttonVariants = cva(
-  "ui button inline-flex items-center gap-2 font-montserrat font-normal text-base max-lg:text-sm border transition",
+  "ui button inline-flex items-center gap-2 font-montserrat font-normal text-base max-lg:text-sm border [&>svg]:w-5 [&>svg]:h-5 transition",
   {
     variants: {
       variant: {
@@ -13,7 +13,8 @@ const buttonVariants = cva(
         ghost:
           "bg-white border-white text-blue-500 hover:bg-blue-100 hover:border-blue-100",
         outline: "bg-white border-blue-500 text-blue-500",
-        link: "bg-white border-white text-blue-400 hover:text-blue-500"
+        link: "bg-white border-white text-blue-400 hover:text-blue-500",
+        "link-muted": "bg-white border-white text-gray-500 hover:text-black",
       },
       size: {
         default: "py-1 px-4",
@@ -53,6 +54,7 @@ const Button = ({
   size,
   ...props
 }: ButtonProps) => {
+  console.log(className)
   return (
     <button
       {...props}
@@ -63,4 +65,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export { Button, buttonVariants };

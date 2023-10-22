@@ -2,11 +2,11 @@ import mockub from "../assets/images/mockup.svg";
 import mini_blob from "../assets/images/mini_blob.svg";
 
 import Box from "./ui/Box";
-import Button from "./ui/Button";
 import FlexBox from "./ui/FlexBox";
 import Heading from "./ui/Heading";
 import Container from "./ui/Container";
 import Typography from "./ui/Typography";
+import { Button } from "./ui/Button";
 
 const Hero = () => {
   return (

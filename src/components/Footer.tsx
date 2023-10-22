@@ -6,7 +6,7 @@ import {
 } from "react-icons/ri";
 
 import Box from "./ui/Box";
-import Button from "./ui/Button";
+import { Button } from "./ui/Button";
 import FlexBox from "./ui/FlexBox";
 import Heading from "./ui/Heading";
 import Container from "./ui/Container";
@@ -91,13 +91,11 @@ const Footer = () => {
           </Box>
         </FlexBox>
       </Container>
-      <Container className="w-full bg-gray-50 py-4">
-        <Box>
-          <Typography className="text-center">
-            Made With Love By Figmaland All Right Reserved{" "}
-          </Typography>
-        </Box>
-      </Container>
+      <Box className="bg-gray-50 p-4">
+        <Typography className="text-center">
+          Made With Love By Figmaland All Right Reserved{" "}
+        </Typography>
+      </Box>
     </footer>
   );
 };

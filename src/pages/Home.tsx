@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main id="main" className="main">
+      <main id="main">
         <Hero />
         <Features />
         <Testimonials />

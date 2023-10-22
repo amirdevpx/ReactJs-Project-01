@@ -6,7 +6,7 @@ import post_4 from "../assets/images/post_4.png";
 import HeadBox from "./HeadBox";
 
 import Box from "./ui/Box";
-import Button from "./ui/Button";
+import { Button } from "./ui/Button";
 import FlexBox from "./ui/FlexBox";
 import Container from "./ui/Container";
 import Typography from "./ui/Typography";

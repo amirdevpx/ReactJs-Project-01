@@ -3,7 +3,7 @@ import { RiCheckboxCircleFill } from "react-icons/ri";
 import HeadBox from "./HeadBox";
 
 import Box from "./ui/Box";
-import Button from "./ui/Button";
+import { Button } from "./ui/Button";
 import FlexBox from "./ui/FlexBox";
 import Heading from "./ui/Heading";
 import Container from "./ui/Container";
