@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { RiArrowRightLine, RiCloseFill, RiMenuFill } from "react-icons/ri";
 
 import Logo from "./Logo";
@@ -9,10 +8,9 @@ import Container from "./ui/Container";
 import Box from "./ui/Box";
 import { useState } from "react";
 import { useWindowWidthAndHeight } from "../hooks";
-import { cn } from "../libs/utils";
 
 const Header = () => {
-  const [width, heaight] = useWindowWidthAndHeight();
+  const [width, _] = useWindowWidthAndHeight();
   return (
     <header id="header" className="header bg-white shadow">
       <Container className="py-4">
@@ -86,7 +84,7 @@ const MobileMenu = () => {
         items="center"
         justify="between"
         className={
-          "fixed max-lg:w-2/4 max-md:w-full h-screen bg-white p-4 top-0 duration-300 ease-in-out z-[101] " +
+          "fixed max-lg:w-2/4 max-md:w-3/4 max-sm:w-full h-screen bg-white p-4 top-0 duration-300 ease-in-out z-[101] " +
           (isOpen ? "right-0" : " -right-full")
         }
       >
@@ -100,42 +98,42 @@ const MobileMenu = () => {
         </Button>
         <ul className="w-full children:mb-4">
           <li>
-            <Button variant="link-muted" className="w-full justify-center">
+            <Button variant="link-muted" className="w-full justify-center" onClick={()=> setIsOpen(false)}>
               <a href="#hero" className="text-lg">
                 Home
               </a>
             </Button>
           </li>
           <li>
-            <Button variant="link-muted" className="w-full justify-center">
-              <a href="#feautures" className="text-lg">
+            <Button variant="link-muted" className="w-full justify-center" onClick={()=> setIsOpen(false)}>
+              <a href="#features" className="text-lg">
                 Product
               </a>
             </Button>
           </li>
           <li>
-            <Button variant="link-muted" className="w-full justify-center">
+            <Button variant="link-muted" className="w-full justify-center" onClick={()=> setIsOpen(false)}>
               <a href="#pricing" className="text-lg">
                 Pricing
               </a>
             </Button>
           </li>
           <li>
-            <Button variant="link-muted" className="w-full justify-center">
+            <Button variant="link-muted" className="w-full justify-center" onClick={()=> setIsOpen(false)}>
               <a href="#contact" className="text-lg">
                 Contact
               </a>
             </Button>
           </li>
           <li>
-            <Button variant="ghost" className="w-full justify-center">
+            <Button variant="ghost" className="w-full justify-center" onClick={()=> setIsOpen(false)}>
               <a href="#" className="text-lg">
                 Login
               </a>
             </Button>
           </li>
           <li>
-            <Button className="w-full justify-center">
+            <Button className="w-full justify-center" onClick={()=> setIsOpen(false)}>
               <a href="#" className="text-lg">
                 Become a member
               </a>
